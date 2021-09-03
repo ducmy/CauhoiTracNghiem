@@ -8,7 +8,15 @@ void main() {
 class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Center(child: Text('New App 2021')),
+      // Đưa vào vùng an toàn
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Quiz App'),
+        ),
+        body: Center(
+          child: Text('Hello World'),
+        ),
+      ),
     );
   }
 }
